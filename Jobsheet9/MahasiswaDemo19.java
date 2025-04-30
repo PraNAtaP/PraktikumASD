@@ -65,7 +65,11 @@ public class MahasiswaDemo19 {
                     break;
 
                 case 6:
-                    System.out.println("Bye!");
+                    System.out.println("Total tugas terkumpul: " + stack.size());
+                    break;
+
+                case 7:
+                    System.out.println("Keluar program.");
                     break;
 
                 default:
