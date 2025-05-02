@@ -78,7 +78,7 @@ public class SuratDemo19 {
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (pilih != 5);
+        } while (pilih != 0);
 
         scan.close();
     }
