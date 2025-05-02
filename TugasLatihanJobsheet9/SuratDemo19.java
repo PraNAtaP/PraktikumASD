@@ -4,32 +4,32 @@ import java.util.Scanner;
 
 public class SuratDemo19 {
     public static void main(String[] args) {
-        StackSurat19 stack = new StackSurat19(10);
+        StackSurat19 stack = new StackSurat19(5);
         Scanner scan = new Scanner(System.in);
-        int pilih;
 
+        int pilih;
         do {
             System.out.println("\nMenu Surat Izin:");
-            System.out.println("1. Terima Surat Izin");
+            System.out.println("1. Input Surat Izin");
             System.out.println("2. Verifikasi Surat Izin");
             System.out.println("3. Lihat Surat Izin Terakhir");
-            System.out.println("4. Cari Surat");
-            System.out.println("5. Keluar");
+            System.out.println("4. Cari Surat Izin");
+            System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
 
             switch (pilih) {
                 case 1:
-                    System.out.print("ID Surat: ");
+                    System.out.print("ID Surat : ");
                     String id = scan.nextLine();
-                    System.out.print("Nama Mahasiswa: ");
+                    System.out.print("Nama Mahasiswa : ");
                     String nama = scan.nextLine();
-                    System.out.print("Kelas: ");
+                    System.out.print("Kelas : ");
                     String kelas = scan.nextLine();
-                    System.out.print("Jenis Izin (S/I): ");
+                    System.out.print("Jenis Izin (S/I) : ");
                     char jenis = scan.nextLine().toUpperCase().charAt(0);
-                    System.out.print("Durasi Izin (hari): ");
+                    System.out.print("Durasi Izin (hari) : ");
                     int durasi = scan.nextInt();
                     scan.nextLine();
 
@@ -71,7 +71,7 @@ public class SuratDemo19 {
                     stack.cariSurat(cariNama);
                     break;
 
-                case 5:
+                case 0:
                     System.out.println("Terima Kasih!");
                     break;
 

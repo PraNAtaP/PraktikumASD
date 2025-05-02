@@ -53,7 +53,7 @@ public class StackSurat19 {
         for (int i = top; i >= 0; i--) {
             if (stack[i].namaMahasiswa.equalsIgnoreCase(nama)) {
                 ketemu = true;
-                System.out.println("Surat ditemukan:");
+                System.out.println("Surat berhasil ditemukan! :");
                 System.out.printf("ID: %s | Nama: %s | Kelas: %s | Jenis: %s | Durasi: %d hari\n",
                         stack[i].idSurat, stack[i].namaMahasiswa, stack[i].kelas,
                         stack[i].jenisIzin == 'S' ? "Sakit" : "Izin", stack[i].durasi);
