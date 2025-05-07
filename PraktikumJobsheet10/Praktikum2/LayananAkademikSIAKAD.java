@@ -23,9 +23,9 @@ public class LayananAkademikSIAKAD {
 
             switch (pilihan) {
                 case 1:
-                    System.out.print("NIM :");
+                    System.out.print("NIM : ");
                     String nim = sc.nextLine();
-                    System.out.print("Nama :");
+                    System.out.print("Nama : ");
                     String nama = sc.nextLine();
                     System.out.print("Prodi : ");
                     String prodi = sc.nextLine();
