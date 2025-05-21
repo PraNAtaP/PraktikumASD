@@ -1,12 +1,12 @@
 package Tugas;
 
-public class Queue {
+public class Queue19 {
     Node19 front;
     Node19 rear;
     int size;
     int max;
 
-    public Queue(int max) {
+    public Queue19(int max) {
         this.max = max;
         this.size = 0;
         this.front = null;

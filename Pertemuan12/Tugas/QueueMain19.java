@@ -23,7 +23,7 @@ public class QueueMain19 {
         int n = sc.nextInt();
         sc.nextLine();
 
-        Queue queue = new Queue(n);
+        Queue19 queue = new Queue19(n);
 
         int pilih;
         do {
