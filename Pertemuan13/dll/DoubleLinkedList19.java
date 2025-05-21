@@ -79,12 +79,8 @@ public class DoubleLinkedList19 {
             return;
         }
         if (head == tail) {
-            System.out.println("Data sudah berhasil dihapus. Data yang terhapus adalah : ");
-            head.data.tampil();
             head = tail = null;
         } else {
-            System.out.println("Data sudah berhasil dihapus. Data yang terhapus adalah : ");
-            head.data.tampil();
             head = head.next;
             head.prev = null;
         }
@@ -96,12 +92,8 @@ public class DoubleLinkedList19 {
             return;
         }
         if (head == tail) {
-            System.out.println("Data sudah berhasil dihapus. Data yang terhapus adalah : ");
-            tail.data.tampil();
             head = tail = null;
         } else {
-            System.out.println("Data sudah berhasil dihapus. Data yang terhapus adalah : ");
-            tail.data.tampil();
             tail = tail.prev;
             tail.next = null;
         }
