@@ -78,6 +78,10 @@ public class DoubleLinkedList19 {
             System.out.println("List kosong, tidak bisa dihapus.");
             return;
         }
+
+        Mahasiswa19 deleted = head.data;
+        System.out.print("Data sudah berhasil dihapus. Data yang terhapus adalah: ");
+        deleted.tampil();
         if (head == tail) {
             head = tail = null;
         } else {
