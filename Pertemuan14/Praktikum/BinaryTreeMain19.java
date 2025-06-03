@@ -6,14 +6,14 @@ public class BinaryTreeMain19 {
 
         bst.add(new Mahasiswa19("244160121", "Ali", "A", 3.57));
         bst.add(new Mahasiswa19("244160221", "Badar", "B", 3.85));
-        bst.add(new Mahasiswa19("244160185", "Candra", "C", 3.57));
-        bst.add(new Mahasiswa19("244160220", "Dewi", "B", 3.57));
+        bst.add(new Mahasiswa19("244160185", "Candra", "C", 3.21));
+        bst.add(new Mahasiswa19("244160220", "Dewi", "B", 3.54));
 
         System.out.println("\nDaftar semua Mahasiswa (in order traversal) : ");
         bst.traverseInOrder(bst.root);
 
         System.out.println("\nPencarian data mahasiswa : ");
-        System.out.println("Cari mahasiswa dengan ipk : 3.54 : ");
+        System.out.print("Cari mahasiswa dengan ipk : 3.54 : ");
         String hasilCari = bst.find(3.54) ? "Ditemukan" : "Tidak ditemukan";
         System.out.println(hasilCari);
 
