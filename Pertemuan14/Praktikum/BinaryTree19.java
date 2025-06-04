@@ -11,6 +11,23 @@ public class BinaryTree19 {
         return root == null;
     }
 
+    public void tampilMahasiswaIPKdiAtas(double ipkBatas) {
+        tampilMahasiswaIPKdiAtasHelper(root, ipkBatas);
+    }
+
+    public void tampilMahasiswaIPKdiAtasHelper(Node19 node, double ipkBatas) {
+        if (node == null)
+            return;
+
+        tampilMahasiswaIPKdiAtasHelper(node.left, ipkBatas);
+
+        if (node.mahasiswa.ipk > ipkBatas) {
+            node.mahasiswa.tampilInformasi();
+        }
+
+        tampilMahasiswaIPKdiAtasHelper(node.right, ipkBatas);
+    }
+
     public Mahasiswa19 cariMinIPK() {
         if (root == null) {
             return null;
@@ -48,7 +65,7 @@ public class BinaryTree19 {
         }
         return current;
     }
-    
+
     public void add(Mahasiswa19 mahasiswa) {
         Node19 newNode = new Node19(mahasiswa);
         if (isEmpty()) {
