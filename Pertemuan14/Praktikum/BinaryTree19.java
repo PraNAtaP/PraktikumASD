@@ -11,6 +11,22 @@ public class BinaryTree19 {
         return root == null;
     }
 
+    public void addRekursif(Mahasiswa19 mahasiswa) {
+        root = addRekursifHelper(root, mahasiswa);
+    }
+
+    public Node19 addRekursifHelper(Node19 current, Mahasiswa19 mahasiswa) {
+        if (current == null) {
+            return new Node19(mahasiswa);
+        }
+        if (mahasiswa.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursifHelper(current.left, mahasiswa);
+        } else {
+            current.right = addRekursifHelper(current.right, mahasiswa);
+        }
+        return current;
+    }
+    
     public void add(Mahasiswa19 mahasiswa) {
         Node19 newNode = new Node19(mahasiswa);
         if (isEmpty()) {
