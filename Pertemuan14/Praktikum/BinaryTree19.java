@@ -11,6 +11,28 @@ public class BinaryTree19 {
         return root == null;
     }
 
+    public Mahasiswa19 cariMinIPK() {
+        if (root == null) {
+            return null;
+        }
+        Node19 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.mahasiswa;
+    }
+
+    public Mahasiswa19 cariMaxIPK() {
+        if (root == null) {
+            return null;
+        }
+        Node19 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.mahasiswa;
+    }
+
     public void addRekursif(Mahasiswa19 mahasiswa) {
         root = addRekursifHelper(root, mahasiswa);
     }
